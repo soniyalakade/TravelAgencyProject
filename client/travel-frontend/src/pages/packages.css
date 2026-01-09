@@ -1,0 +1,287 @@
+/* ================= PACKAGES PAGE ================= */
+
+.packages-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+
+.package-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= PACKAGE LIST ================= */
+
+.pkg-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #1C4D8D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0F2854;
+  transform: translateY(-2px);
+}
+
+/* ================= MODAL ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* ================= PACKAGE DETAILS ================= */
+
+.package-details {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+  animation: slideUp 0.6s ease forwards;
+}
+
+.package-details h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.duration {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.package-image {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 14px;
+}
+
+/* ================= GRID ================= */
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ================= LEFT PANEL ================= */
+
+.left-panel {
+  padding: 22px;
+  background: #f9fbff;
+  border-radius: 14px;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a8f3c;
+  margin-bottom: 18px;
+}
+
+/* DATE PICKER */
+
+.date-picker {
+  margin-bottom: 20px;
+}
+
+.date-picker label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.date-picker input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* AVAILABLE DATES */
+
+.dates {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.dates li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* ================= INCLUDES / EXCLUDES ================= */
+
+.includes,
+.excludes {
+  margin-top: 20px;
+}
+
+.includes h4,
+.excludes h4 {
+  margin-bottom: 8px;
+}
+
+.includes li::before {
+  content: "✔ ";
+  color: green;
+}
+
+.excludes li::before {
+  content: "✖ ";
+  color: red;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+.right-panel {
+  padding: 10px 0;
+}
+
+.right-panel h3 {
+  margin-bottom: 15px;
+}
+
+/* ================= ITINERARY ================= */
+
+.itinerary {
+  margin-top: 10px;
+}
+
+.itinerary .day {
+  margin-bottom: 14px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-left: 5px solid #0a8f3c;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* DAY ICONS */
+
+.itinerary .day:nth-child(1)::before {
+  content: "🌄 ";
+}
+
+.itinerary .day:nth-child(2)::before {
+  content: "🍽️ ";
+}
+
+.itinerary .day:nth-child(3)::before {
+  content: "🚗 ";
+}
+
+.itinerary .day:nth-child(4)::before {
+  content: "🏝️ ";
+}
+
+.itinerary .day:nth-child(5)::before {
+  content: "✈️ ";
+}
+
+/* ================= BOOK BUTTON ================= */
+
+.book-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 17px;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    position: static;
+  }
+}

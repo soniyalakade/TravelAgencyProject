@@ -1,0 +1,356 @@
+/* ================= GLOBAL ================= */
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Poppins', Helvetica, sans-serif;
+  background-color: #f8f8f8; /* light blue background */
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+header {
+  background: #ffffff;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #0b2c5d;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #1e90ff;
+}
+.nav-links a:hover {
+  color: #1e90ff;
+  transition: color 0.3s ease;
+}
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 10vh;
+}
+
+
+/* Left side (logo + name) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+}
+
+.logo-img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+.logo-text {
+  margin: 0;
+  font-size: 22px;
+  color: #0F2854; /* dark blue */
+  font-weight: 600;
+}
+
+/* Right side links */
+.nav-links a {
+  margin-left: 20px;
+  color: #0F2854; /* dark blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1C4D8D; /* lighter blue */
+}
+
+/* ================= SLIDER ================= */
+.slider-wrapper {
+  width: 100vw;
+  height: 85vh;          /* ⬅️ increase height here */
+  padding-top: 65px;     /* space for fixed navbar */
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* keeps image proportional */
+  display: block;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* ================= COMMON CONTAINER ================= */
+.container {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top:  100px;
+}
+
+/* ================= CARD LAYOUT ================= */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* wider cards */
+  gap: 40px; /* increases space between cards */
+  margin-top: 20px;
+}
+
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+
+.card h3 {
+  color: #0F2854;
+}
+
+.card p {
+  color: #1C4D8D;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(15, 40, 84, 0.3);
+  transition: all 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: 220px;   /* taller image */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* ================= FORM ================= */
+.form {
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #4988C4;
+  border-radius: 5px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #0F2854;
+  color: #BDE8F5;
+  width: 100%;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact-section {
+  width: 100vw;                 /* full screen width */
+  background-color: #1C4D8D;    /* blue background */
+  padding: 70px 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+.contact-section h2 {
+  color: #0F2854;
+}
+
+.contact-section p {
+  font-size: 16px;
+  width: 100vw;                 /* full screen width */
+  background-color: #1C4D8D;    /* your blue color */
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Text styling */
+.contact-section h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.contact-details p {
+  margin: 6px 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+.about-section {
+  margin-top: 120px; /* space below fixed navbar */
+  text-align: center;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 15px auto;
+  color: #1C4D8D;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.package-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.featured-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f0f8ff;
+  margin-bottom: -70px;
+}
+
+.featured-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+.about-section {
+  padding: 60px 20px;
+  background-color: #e0f7fa;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+.testimonial-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+.testimonial-card h4 {
+  margin-top: 10px;
+  color: #333;
+}
