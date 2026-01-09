@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da896a13.css",
+    "main.js": "/static/js/main.0afdeff4.js",
+    "static/media/dubai.png": "/static/media/dubai.ac9430bfb0227ef86625.png",
+    "static/media/image1.png": "/static/media/image1.e672045d16b7f70b6c1c.png",
+    "static/media/image3.jpg": "/static/media/image3.0c33347d29112e89213c.jpg",
+    "static/media/bali.png": "/static/media/bali.e5dbadd235836dde52eb.png",
+    "static/media/image2.jpg": "/static/media/image2.dd289a38cb2ece17d839.jpg",
+    "static/media/kashmir.png": "/static/media/kashmir.1d5763a58096deb69693.png",
+    "static/media/maldives.png": "/static/media/maldives.9823edfcd517ca842e18.png",
+    "static/media/agra.png": "/static/media/agra.d97960793abae92be04f.png",
+    "static/media/manali.png": "/static/media/manali.5836518fd900c9b0bceb.png",
+    "static/media/goa.png": "/static/media/goa.9c54ad1b36abb96810b2.png",
+    "static/media/jaipur.png": "/static/media/jaipur.091de00c73b8f61c586d.png",
+    "static/media/paris.png": "/static/media/paris.13548b069e4d30673c3c.png",
+    "static/media/thailand.png": "/static/media/thailand.f35a4e3c4756da94ab0f.png",
+    "static/media/image4.png": "/static/media/image4.57a1a3c8ce7e296ec956.png",
+    "static/media/kerala.png": "/static/media/kerala.b6e6808f8e03f910303a.png",
+    "static/media/logo.png": "/static/media/logo.a9aa1f4f822e14d43c76.png",
+    "static/media/singapore.png": "/static/media/singapore.308130f921d8f50642b1.png",
+    "index.html": "/index.html",
+    "main.da896a13.css.map": "/static/css/main.da896a13.css.map",
+    "main.0afdeff4.js.map": "/static/js/main.0afdeff4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da896a13.css",
+    "static/js/main.0afdeff4.js"
+  ]
+}
